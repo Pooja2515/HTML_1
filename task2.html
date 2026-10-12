@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #49535c;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-card {
+            width: 300px;
+            background: #f8f8fc;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            overflow: visible;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-header {
+            background: #f0f0f5;
+            padding: 15px 15px 20px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #e5e5e5;
+            margin-bottom: 18px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #292929;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .username {
+            color: #aaa;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .job {
+            color: #aaa;
+            font-size: 12px;
+        }
+
+        .add-btn {
+            position: absolute;
+            right: -27px;
+            top: 155px;
+            width: 53px;
+            height: 53px;
+            border: none;
+            border-radius: 50%;
+            background: #f45178;
+            color: white;
+            font-size: 34px;
+            font-weight: 300;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(244, 81, 120, 0.4);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 23px 8px;
+        }
+
+        .stat h3 {
+            color: #292929;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .stat p {
+            color: #aaa;
+            font-size: 11px;
+        }
+
+        .message-btn {
+            width: 180px;
+            padding: 13px;
+            background: #5bc0bd;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 25px;
+        }
+
+        .message-btn:hover {
+            background: #42aaa7;
+        }
+
+        .more {
+            display: block;
+            color: #aaa;
+            text-decoration: none;
+            font-size: 12px;
+            padding-bottom: 18px;
+        }
+
+        .more span {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img
+                class="profile-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcEPP78w6hILxd3CWF088W-XhFkp3vpm1SOl_hilPjw&s"
+                alt="Profile picture">
+            <h2>Leslie Walton</h2>
+            <p class="username">@lesliew</p>
+            <p class="job">Product Designer, Kyiv</p>
+        </div>
+        <button class="add-btn" aria-label="Add profile">+</button>
+        <div class="stats">
+            <div class="stat">
+                <h3>17</h3>
+                <p>SHOTS</p>
+            </div>
+            <div class="stat">
+                <h3>143</h3>
+                <p>FOLLOWING</p>
+            </div>
+            <div class="stat">
+                <h3>57</h3>
+                <p>FOLLOWERS</p>
+            </div>
+        </div>
+        <button class="message-btn"
+                onclick="alert('Message button clicked!')">
+            Send message
+        </button>
+        <a href="#" class="more">MORE <span>v</span></a>
+    </div>
+</body>
+</html>
